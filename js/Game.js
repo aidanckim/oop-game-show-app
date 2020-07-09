@@ -115,13 +115,13 @@ class Game {
     phrase.innerHTML = ' '
 
     const resetHearts = document.querySelectorAll('img')
-		resetHearts.forEach(heart => heart.src = 'images/liveHeart.png')
+		resetHearts.forEach(heart => heart.src = 'images/liveHeartNew.png')
     
     this.missed = 0
 		this.phrases = this.createPhrases()
 		this.activePhrase = null
 
-		const keys = [...letters]
+    const keys = [...letters]
 		keys.forEach(key => {
       key.removeAttribute('disabled')
       key.className = 'key'

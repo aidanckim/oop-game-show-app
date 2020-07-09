@@ -18,4 +18,8 @@ for (let i = 0; i < letters.length; i++) {
 	alpha.addEventListener('click', (e) => {
 		game.handleInteraction(e.target)
 	})
+	addEventListener('keydown', (e) => {
+    if (e.key === alpha.textContent)
+      game.handleInteraction(alpha)
+  })
 }
